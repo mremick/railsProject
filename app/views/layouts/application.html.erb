@@ -1,14 +1,95 @@
 <!DOCTYPE html>
 <html>
 <head>
+
   <title>TreehouseApp</title>
   <%= stylesheet_link_tag    "application", media: "all", "data-turbolinks-track" => true %>
   <%= javascript_include_tag "application", "data-turbolinks-track" => true %>
   <%= csrf_meta_tags %>
 </head>
 <body>
-<h1><center>Eyes on Track</center></h1>
-<%= yield %>
-<em>Footer.. </em>
+
+	<!-- ==============================================
+        BEGIN MAIN MAV
+        =============================================== -->
+	<div class="navbar navbar-fixed-top">
+		<div class="navbar-inner">
+			<div class="container">
+				<a class="brand" href="#"> Navigation Bar </a>
+				<ul class="nav">
+					<li><%= link_to "About", statuses_path =%></li>
+
+			</div>
+		</div>
+	</div>
+
+	<!-- ==============================================
+        END MAIN MAV
+        =============================================== -->
+
+
+
+
+	<div class="container">
+		<%= yield %> 
+
+
+        <!-- ==============================================
+        BEGIN ROW MARKETING
+        =============================================== -->
+<section id="services">
+	<div class="container">
+		<h1 class="section-title scrollimation scale-in"> 
+			This is a test.....!!!!
+		</h1>
+	</div>
+</section>
+
+        <div class="row marketing">
+                <div class="col-lg-6">
+                	<div class="page-header">
+                    	<h4>Eyes on Track</h4>
+                    	<p>A brief desciption of eyes on track and what it does.</p>
+                    </div>
+
+                    <div class="page-header">
+                    	<h4 id="near-vision">Near Vision</h4>
+                    	<p>SymptomsSymptomsSymptomsSymptomsSymptomsSymptomsSymptoms
+                    	SymptomsSymptomsSymptomsSymptomsSymptomsSymptomsSymptoms</p>
+                    </div>
+
+                    <div class="page-header">
+                    	<h4 id="symptom-check">Symptom Check</h4>
+                    	<p>	Testimonial1Testimonial1Testimonial1Testimonial1Testimonial1
+                        Testimonial1Testimonial1Testimonial1Testimonial1Testimonial1.</p>
+                     </div>                   
+
+
+                   <div class="page-header">
+                    	<h4 id="testimonials">Testimonials</h4>
+                    	<p>Testimonial 2Testimonial 2Testimonial 2Testimonial 2Testimonial 2
+                    	Testimonial 2Testimonial 2Testimonial 2Testimonial 2Testimonial 2Testimonial 2</p>
+                    </div>
+
+                    <div class="page-header">
+                     	<h4 id="order">Order</h4>
+                    	<p>Testimonial 2Testimonial 2Testimonial 2Testimonial 2Testimonial 2
+                    	Testimonial 2Testimonial 2Testimonial 2Testimonial 2Testimonial 2Testimonial 2</p>
+                    </div>
+
+                    <div class="page-header">
+                     	<h4 id="contact">Contact</h4>
+                    	<p>Testimonial 2Testimonial 2Testimonial 2Testimonial 2Testimonial 2
+                    	Testimonial 2Testimonial 2Testimonial 2Testimonial 2Testimonial 2Testimonial 2</p>
+                    </div>
+
+                 </div>
+              </div>
+
+<!-- ==============================================
+        END ROW MARKETING
+        =============================================== -->
+	</div>
+
 </body>
 </html>
